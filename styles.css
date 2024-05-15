@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     color: white;
-    min-height: 65vh;
+    min-height: 60vh;
 }
 
 .navbar{
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: calc(65vh - 65px);
+    height: calc(60vh - 65px);
     /* you can also try height 120px */
 }
 
@@ -131,4 +131,54 @@
         width: 95%;
     }
     
+}
+
+/*  Out of media queries */
+.container{
+    margin-top: 3rem auto ;
+    width: 90%;
+}
+
+.we__offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.we__offer_card{
+    border-radius: 10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    width: calc(25% - 2rem); 
+    margin: 3rem auto; 
+    margin-right: calc(10% - 10rem);
+    
+}
+
+.we__offer_card:hover{
+    transform: scale(1.12);
+    transition: all 3s ease-in-out;
+}
+
+.we__offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offer_content{
+    padding: 10px;
+}
+
+.we__offer_content h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we__offer_content p{
+    font-size: 13px;
 }
