@@ -160,7 +160,7 @@
 
 .we__offer_card:hover{
     transform: scale(1.12);
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .we__offer_card img{
@@ -209,7 +209,7 @@
 .collectionsCardContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1.25rem;
@@ -222,6 +222,11 @@
     background-position: center;
     border-radius: 10px;
     position: relative;
+    width: 20%;
+}
+
+.card1{
+    margin-left: 20px;
 }
 
 .card1{
@@ -408,4 +413,218 @@
     width: 95%;
     flex-direction: column;
    }
+}
+
+/* Explore Options Near ME */
+
+.exploreOptions{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.exploreOptions .optionsContainer{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 100px;
+}
+
+.exploreOptionsText{
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.first{
+    display: flex;
+    flex-wrap: wrap;
+    flex: content;
+    margin-top: 1.2rem;
+}
+
+.second{
+    display: flex;
+    flex-wrap: wrap;
+    flex: content;
+    margin-top: 1.2rem;
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    flex: content;
+    margin-top: 1.2rem;
+}
+
+.fourth{
+    display: flex;
+    flex-wrap: wrap;
+    flex: content;
+    margin-top: 1.2rem;
+}
+
+.dropdown-button{
+    background-color: ghostwhite;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 90%;
+    height: 4rem;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 22px;
+}
+
+.dropdown-button:hover{
+    cursor: pointer;
+}
+
+.restaurantNav,
+.chainContainer,
+.deliveryContainer{
+    border: 1px solid lightgray;
+    width: 90%;
+    word-spacing: 3px;
+    padding-left: 22px;
+    padding: 10px 27px;
+    border-radius: 5px;
+}
+
+
+.seeMore{
+    text-decoration: underline;
+    color: darkorchid;
+}
+
+.seeMore:hover{
+    color: darkviolet;
+}
+
+.anchorContainer{
+    color: gray;
+    background-color: ghostwhite;
+    text-decoration: none; 
+    padding-left: 2px;   
+    width: 100%;
+} 
+
+/*  FOOTER SECTION */
+.footer{
+    width: 100%;
+}
+
+.footerSection1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.footerSection1 img{
+    width: 150px;
+}
+
+.section1ButtonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1ButtonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.navigationContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.linksContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linksContainer h5{
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+    letter-spacing: 0.78px;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footerLink:hover{
+    color: black;
+}
+
+.socialLinksContainer button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.socialLinksContainer button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerSectionLogos{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 94%;
+    color: gray;
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+    margin-bottom: 25px;
+    font-size: 13.5px;
+}
+
+@media only screen and (max-width: 900px){
+    .navigationContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navigationContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .navigationContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
